@@ -102,7 +102,155 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 
+
+   html {
+     box-sizing: border-box;
+   }
+   *, *:before, *:after {
+     box-sizing: inherit;
+   }
+
+   body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.4;
+   }
+   img {
+     max-width: 100%;
+     display: block;
+   }
+
+   /* .page-header */
+   .page-header {
+     background-color: #00a0d2;
+     color: #fff;
+     position: relative;
+     padding: 1em;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
+     z-index: 100;
+   }
+   .page-header h1 {
+     font-size: 1.5em;
+     line-height: 1;
+     text-transform: uppercase;
+     text-align: center;
+     margin: 0;
+   }
+   .page-header .nav-icon {
+     cursor: pointer;
+     position: absolute;
+     font-size: 30px;
+     left: 1em;
+     top: 50%;
+     transform: translateY(-50%);
+   }
+
+
+   /* .main-content */
+   .main-content {
+     margin: 3em auto;
+     /*margin: 5em auto;*/
+     max-width: 960px;
+     padding: 1em;
+   }
+
+
+   /* .main-nav */
+   .main-nav {
+     display: none; 
+     /*fake--only for now on body class--just to see before adding JS*/
+     background: #00a0d2;
+     font-size: 1.3em;
+     font-weight: 550;
+     position: relative;
+   }
+   .main-nav ul {
+     margin-top: 1.5em;
+     list-style-type: none;
+   }
+
+   .main-nav li {
+     margin: 1em 0;
+   }
+
+   .main-nav a {
+     color: #fff;
+     text-decoration: none;
+   }
+
+   .main-nav .close-icon {
+     font-style: normal;
+     position: absolute;
+     top: 0.9rem;
+     right: 1em;
+     line-height: 1;
+     color: #fff;
+     cursor: pointer;
+   }
+
+   .main-nav li {
+     position: relative;
+   }
+
+   .main-nav li.is-active:before {
+     content: '';
+     display: block;
+     border: 0.5rem solid transparent;
+     border-left-color: #e0793d;
+     position: absolute;
+     left: -0.75em;
+     top: 50%;
+     transform: translateY(-50%);
+   }
+   
+
+   /* .nav-open
+      When the navigation sidebar is open
+      State stuff here
+   */
+   .nav-open {
+     overflow: hidden; /* cuts off page on rt side-so not overflowing example with 2.5em vlack border*/
+   }
+   .nav-open .main-nav {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     border: 1px solid #00a0d2;
+     width: 50%;
+     min-height: 100%;  /*for cases with lots of nav elements---so can scroll
+     up and down the screen. height: 100% */
+   }
+   .nav-open .page-content  {
+     border: 1px solid orange;
+     transform: translateX(50%);
+   }
+   .nav-open .page-content:before {
+     content: '';
+     display: block;
+     width: 100%;
+     height: 100%;
+     background: hsla(30, 100%, 50%, 0.60);
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 150;
+   }
+   .home-image{
+    margin: 0 auto;
+    padding: 0px;
+    width: 100%;
+   }
+
+/* ==========================================================================
 
 
 
