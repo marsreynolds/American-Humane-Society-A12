@@ -1,0 +1,67 @@
+/*css pet-specifics page*/
+
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  *, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: #e0793d;
+  margin-top: 2em;
+  margin:2em;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.4;
+
+
+}
+.wrapper{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2em;
+      grid-auto-rows: minmax(100px, auto);
+      margin: 0 100px;
+      
+    }
+
+    .wrapper > div{
+      background:#fff;
+      border: 6px solid #0086bc;
+      color: #222;
+      padding: 1.5em;
+       border-radius: 20px;
+    }
+    
+
+    .box1{
+      grid-column: 1/2;
+      grid-row:1;
+    }
+
+    .box2{
+      grid-column: 2/2;
+      grid-row:1;
+    }
+
+
+    .box3{
+      grid-column: 1/2;
+      grid-row:2;
+    }
+
+    .box4{
+      grid-column: 2/2;
+      grid-row:2;
+    }
+
+    .pet-name{
+      text-align: center;
+    }
