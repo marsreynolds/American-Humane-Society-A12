@@ -215,6 +215,7 @@ h2.headline2 {
     opacity: 0;
     transform: translateY(1rem);
     transition: all 0.4s ease-in-out;
+    color: #fff;
 }
 
 .content-gallery figcaption h2 {
